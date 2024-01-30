@@ -11,7 +11,7 @@ def main():
         print("Enter the modulus: ")
         m = int(input())
 
-        if a % m == b % m:
+        if (a - b) % m == 0:
             print("The numbers are congruent. The remainder is " + str(a % m) + ".")
         else:
             print("The numbers are not congruent. The remainder of " + str(a) + " is " + str(a % m) + " and the remainder of " + str(b) + " is " + str(b % m) + ".")
